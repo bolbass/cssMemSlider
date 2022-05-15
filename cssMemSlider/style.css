@@ -17,3 +17,86 @@ h1{
 	color: rgba(0, 32, 82, 0.962);
 	font-style: italic;
 }
+.wrapper > input {
+	display: none;
+	}
+.wrapper {
+	margin: 2em auto 0;
+    width: 36em;
+    height: 28em;
+    border-radius: 1rem;
+}
+
+.slider {
+	display: flex;
+	overflow: hidden; 
+	width: 34em;
+	height: 25em;
+	margin: 1em;
+    border-radius: 1.25em;
+	box-shadow: 0 0 1.25em rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0 1.25em rgba(0, 0, 0, .5);
+}
+
+.mems {
+	display: flex;
+	opacity: 0;
+	transition: transform ease-in-out(0.5s), opacity ease-in-out .5s;
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s; 
+}
+.mems img{
+	align-items: center;
+}
+.descr{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+	width: 34em;
+	margin-left: 1em;
+}
+.text{
+	height: 1.7rem;
+    overflow: hidden;
+}
+p{
+	margin: 0;
+    opacity: 0; 
+	text-align: left;
+	
+}
+.ctrls {
+	display: flex;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-flex;
+	height: 1.4em;
+	margin: 0 0.2em 0 0.2em;
+	width: 1.2em;
+	border-radius: 50%;
+}
+.rad{
+	display:  flex;
+	align-items: center;
+	justify-content: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgba(0, 40, 104, 0.744);
+    border: 0.2rem solid rgb(0, 40, 104, 0.744);
+    margin: auto;
+    align-self: center;
+	box-shadow: 0 0 1.25em rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0 1.25em rgba(0, 0, 0, .5);
+	transition: background ease-in-out .3s; 
+	-webkit-transition: background ease-in-out .3s;
+}
+label:active > .rad{
+    transform: scale(0.75);
+}
+label:hover .rad {
+    background-color: rgb(0, 40, 104);
+    border-color: rgb(0, 40, 104);
+}
+.wrapper label:hover{background: rgba(132, 132, 131, 0.049);}
