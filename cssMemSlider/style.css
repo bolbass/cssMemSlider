@@ -160,3 +160,21 @@ label:hover .rad {
     transform: translateY(-400%);
     opacity: 1;
 }
+@media(max-width:767px){
+	.descr{
+		flex-direction: column;
+		margin: 1em;
+		}
+		.text{
+			order: 1;
+			width: 34em;
+		}
+		p{
+			text-align: left;
+		}
+		
+		.ctrls{
+			order:0;
+			margin-bottom: 1em;
+		}
+}
