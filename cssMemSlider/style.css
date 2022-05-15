@@ -100,3 +100,63 @@ label:hover .rad {
     border-color: rgb(0, 40, 104);
 }
 .wrapper label:hover{background: rgba(132, 132, 131, 0.049);}
+#mem1:checked ~ .slider > .mem1{
+	transform: translateX(0);
+	opacity: 1;
+}
+#mem2:checked ~ .slider > .mem2{
+	transform: translateX(-100%);
+	opacity: 1;
+}
+#mem3:checked ~ .slider > .mem3{
+	transform: translateX(-200%);
+	opacity: 1;
+}
+#mem4:checked ~ .slider > .mem4{
+	transform: translateX(-300%);
+	opacity: 1;
+}
+#mem5:checked ~ .slider > .mem5 {
+	opacity: 1;
+	transform: translateX(-400%);
+}
+
+
+
+#mem1:checked ~ .descr .ctrls label[for=mem1] .rad,
+#mem2:checked ~ .descr .ctrls label[for=mem2] .rad,
+#mem3:checked ~ .descr .ctrls label[for=mem3] .rad,
+#mem4:checked ~ .descr .ctrls label[for=mem4] .rad,
+#mem5:checked ~ .descr .ctrls label[for=mem5] .rad {
+	background-color: transparent;
+}
+#mem1:checked ~ .descr .t1 {
+	transition: opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+	-webkit-transition:opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+    transform: translateY(0);
+    opacity: 1;
+}
+#mem2:checked ~  .descr   .t2 {
+	transition: opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+	-webkit-transition:opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+    transform: translateY(-100%);
+    opacity: 1;
+}
+#mem3:checked ~  .descr  .t3 {
+	transition: opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+	-webkit-transition:opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+    transform: translateY(-200%);
+    opacity: 1;
+}
+#mem4:checked ~ .descr  .t4 {
+	transition: opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+	-webkit-transition:opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+    transform: translateY(-300%);
+    opacity: 1;
+}
+#mem5:checked ~ .descr  .t5 {
+    transition: opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+	-webkit-transition:opacity 0.8s cubic-bezier(0.97, 0.58, 0, 0.88);
+    transform: translateY(-400%);
+    opacity: 1;
+}
